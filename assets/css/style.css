@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #FBFBFB;
 }
 
 #preloader:before {
@@ -73,11 +73,6 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #18d26e;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
@@ -100,32 +95,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# preloader gif
+--------------------------------------------------------------*/
 
-#loading {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
+.center {
   display: block;
-  opacity: 0.7;
-  background-color: #fff;
-  z-index: 99;
-  text-align: center;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
-#loading-image {
-  position: absolute;
-  top: 100px;
-  left: 240px;
-  z-index: 100;
-}
-.gooogle{
-}
-iframe{
-  display: inline-block;
-  width: 100%;  
-}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -154,6 +135,7 @@ iframe{
   font-weight: 700;
   letter-spacing: 3px;
   padding-left: 10px;
+  padding-right: 10px;
   border-left: 4px solid #18d26e;
 }
 
@@ -162,11 +144,36 @@ iframe{
 }
 
   #header .logo img {
-  max-height: 40px;
+  max-height: 100px;
 }
 
 @media (max-width: 992px) {
   #header .logo {
+    font-size: 28px;
+  }
+}
+
+#header .hr_logo {
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  line-height: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 4px solid #18d26e;
+}
+
+#header .hr_logo a {
+  color: #fff;
+}
+
+  #header .hr_logo img {
+  max-height: 150px;
+}
+
+@media (max-width: 992px) {
+  #header .hr_logo {
     font-size: 28px;
   }
 }
@@ -590,10 +597,11 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
+
   padding: 20px 0;
   background-color: #f7f7f7;
   min-height: 40px;
-  margin-top: 90px;
+  margin-top: 120px;
 }
 
 @media (max-width: 992px) {
@@ -770,6 +778,194 @@ section {
 }
 
 #about .about-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+/* About Us Section
+--------------------------------*/
+#volunteer {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#volunteer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#volunteer .container {
+  position: relative;
+  z-index: 10;
+}
+
+#volunteer .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+#volunteer .about-col .img {
+  position: relative;
+}
+
+#volunteer .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#volunteer .about-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  position: absolute;
+  background-color: #18d26e;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#volunteer .about-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#volunteer .about-col:hover .icon {
+  background-color: #fff;
+}
+
+#volunteer .about-col:hover i {
+  color: #18d26e;
+}
+
+#volunteer .about-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#volunteer .about-col h2 a {
+  color: #000;
+}
+
+#volunteer .about-col h2 a:hover {
+  color: #18d26e;
+}
+
+#volunteer .about-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+/* About Us Section
+--------------------------------*/
+#feedback {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#feedback::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#feedback .container {
+  position: relative;
+  z-index: 10;
+}
+
+#feedback .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+#feedback .about-col .img {
+  position: relative;
+}
+
+#feedback .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#feedback .about-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  position: absolute;
+  background-color: #18d26e;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#feedback .about-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#feedback .about-col:hover .icon {
+  background-color: #fff;
+}
+
+#feedback .about-col:hover i {
+  color: #18d26e;
+}
+
+#feedback .about-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#feedback .about-col h2 a {
+  color: #000;
+}
+
+#feedback .feedback-col h2 a:hover {
+  color: #18d26e;
+}
+
+#feedback .about-col p {
   font-size: 14px;
   line-height: 24px;
   color: #333;

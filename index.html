@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -28,28 +28,23 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: BizPage - v3.0.0
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-<div id="loading">
-  <img id="loading-image" src="assets/img/hr_loader.gif" alt="Loading..." />
-</div>
+	<div id="preloader">
+		<img src="hr_loader.gif" class="center">
+	</div>
+    <!-- ======= Header ======= -->
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container-fluid">
 
       <div class="row justify-content-center">
         <div class="col-xl-11 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.html">Hydrosphere Reserve</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          <a href="index.html" class="hr_logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> 
+          <h1 class="logo mr-auto"><a href="index.html">Hydrosphere Reserve</a></h1>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
@@ -67,8 +62,8 @@
               </li>
               <li><a href="#gallery">Gallery</a></li>
               <li><a href="https://hydrosphereshorts.blogspot.com/" target="_blank">Blog</a></li>
-              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3hP_atw0IuG-6xivIRQPpba1IKJao7XIxP0LKX3KjJNEuHQ/viewform" target="_blank">Volunteer</a></li>
-              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeinZLdNRsoWeYuSW38GGDPeeLqz0FcYB2JE2WniIblDuVxSg/viewform" target="_blank">Feedback</a></li>
+              <li><a href="#volunteer" target="_blank">Volunteer</a></li>
+              <li><a href="#feedback" target="_blank">Feedback</a></li>
               <li><a href="#footer">Donate</a></li>
               <li><a href="#contact">Contact Us</a></li>
 
@@ -85,8 +80,6 @@
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators"></ol>
-
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active" style="background-image: url(assets/img/bg.jpg)">
@@ -98,27 +91,12 @@
           </div>
 
         </div>
-
-
-
       </div>
     </div>
   </section>
 
   <main id="main">
 
-
-    <section id="contact" class="section-bg">
-      <div class="container gooogle" data-aos="fade-up">
-
-
-<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3hP_atw0IuG-6xivIRQPpba1IKJao7XIxP0LKX3KjJNEuHQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0" onload="counter_google_form()">Loading…</iframe>
-    -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeinZLdNRsoWeYuSW38GGDPeeLqz0FcYB2JE2WniIblDuVxSg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"
-    onload="counter_google_form()">Loading…</iframe>
-
-    </div>  
-    </section> 
     <!-- ======= About Us Section ======= -->
     <section id="about">
       <div class="container" data-aos="fade-up">
@@ -241,26 +219,28 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
             <figure>
               <img src="assets/img/portfolio/post1.jpg" class="img-fluid" alt="">
               <a href="assets/img/portfolio/post1.jpg" class="link-preview venobox" data-gall="portfolioGallery"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-project1.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              <a href="portfolio-project1.html" class="link-details" title="More Details" target="_blank"><i class="ion ion-android-open"></i></a>
             </figure>
 
            <div class="portfolio-info">
-              <h4><a href="portfolio-project1.html">Post 1</a></h4>
+              <h4><a href="portfolio-project1.html" target="_blank">Post 1</a></h4>
               <p><strong><h6>Hand wash</h6></strong></p>
             </div>
           </div>
         </div>
+
+
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <figure>
               <img src="assets/img/portfolio/post2.jpg" class="img-fluid" alt="">
               <a href="assets/img/portfolio/post2.jpg" class="link-preview venobox" data-gall="portfolioGallery"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-project2.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              <a href="portfolio-project2.html" class="link-details" title="More Details" target="_blank"><i class="ion ion-android-open"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-project2.html">Post 2</a></h4>
+              <h4><a href="portfolio-project2.html" target="_blank">Post 2</a></h4>
               <p><strong><h6>Influence of Prosopis juliflora on tank system</h6></strong></p>
             </div>
           </div>
@@ -271,11 +251,11 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
             <figure>
               <img src="assets/img/portfolio/post3.jpg" class="img-fluid" alt="">
               <a href="assets/img/portfolio/post3.jpg" class="link-preview venobox" data-gall="portfolioGallery"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-project3.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              <a href="portfolio-project3.html" class="link-details" title="More Details" target="_blank"><i class="ion ion-android-open"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-project3.html">Post 3</a></h4>
+              <h4><a href="portfolio-project3.html" target="_blank">Post 3</a></h4>
               <p><strong><h6>Paradigm Shift of Water</h6></strong></p>
             </div>
           </div>
@@ -286,11 +266,11 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
             <figure>
               <img src="assets/img/portfolio/post4.jpg" class="img-fluid" alt="">
               <a href="assets/img/portfolio/post4.jpg" class="link-preview venobox" data-gall="portfolioGallery"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-project4.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              <a href="portfolio-project4.html" class="link-details" title="More Details" target="_blank"><i class="ion ion-android-open"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-project4.html">Post 4</a></h4>
+              <h4><a href="portfolio-project4.html" target="_blank">Post 4</a></h4>
               <p><strong><h6>Kudimaramathu Scheme</h6></strong></p>
             </div>
           </div>
@@ -301,11 +281,11 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
             <figure>
               <img src="assets/img/portfolio/post5.jpg" class="img-fluid" alt="">
               <a href="assets/img/portfolio/post5.jpg" class="link-preview venobox" data-gall="portfolioGallery"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-project5.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              <a href="portfolio-project5.html" class="link-details" title="More Details" target="_blank"><i class="ion ion-android-open"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-project5.html">Post 5</a></h4>
+              <h4><a href="portfolio-project5.html" target="_blank">Post 5</a></h4>
               <p><strong><h6>Impact of Dyeing Industries in Orathapalayam Dam</h6></strong></p>
             </div>
           </div>
@@ -316,11 +296,11 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
             <figure>
               <img src="assets/img/portfolio/post6.jpg" class="img-fluid" alt="">
               <a href="assets/img/portfolio/post6.jpg" class="link-preview venobox" data-gall="portfolioGallery"><i class="ion ion-eye"></i></a>
-              <a href="portfolio-project6.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              <a href="portfolio-project6.html" class="link-details" title="More Details" target="_blank"><i class="ion ion-android-open"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-project6.html">Post 6</a></h4>
+              <h4><a href="portfolio-project6.html" target="_blank">Post 6</a></h4>
               <p><strong><h6>Automation of canal and Non-Revenue Water</h6></strong></p>
             </div>
           </div>
@@ -721,8 +701,6 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
       </div>
     </section><!-- End Team Section -->
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3hP_atw0IuG-6xivIRQPpba1IKJao7XIxP0LKX3KjJNEuHQ/viewform?embedded=true" width="2080" height="2092" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeinZLdNRsoWeYuSW38GGDPeeLqz0FcYB2JE2WniIblDuVxSg/viewform?embedded=true" width="640" height="406" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="section-bg">
@@ -772,6 +750,33 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
 
       </div>
     </section><!-- End Contact Section -->
+
+
+  <section id="volunteer" class="section-bg bg">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h3 class="section-title">Volunteer</h3>
+      </header>
+      <br>
+      <br>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3hP_atw0IuG-6xivIRQPpba1IKJao7XIxP0LKX3KjJNEuHQ/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>  
+  </section> 
+
+
+    
+  <section id="feedback">
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h3 class="section-title">Feedback</h3>
+      </header>
+      <br>
+      <br>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeinZLdNRsoWeYuSW38GGDPeeLqz0FcYB2JE2WniIblDuVxSg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section><!-- End About Us Section -->
+
+    
 
   </main><!-- End #main -->
 
@@ -825,6 +830,8 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
   <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files -->
+
+
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -838,11 +845,6 @@ To create, rejuvenate or restore and conserve water resources, eventually bringi
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<script>
-  $(window).load(function() {
-    $('#loading').hide();
-  });
-</script>
 </body>
 
 </html>
